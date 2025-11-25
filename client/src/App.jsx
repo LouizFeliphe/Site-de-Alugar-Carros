@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import { useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Home from './pages/Home';
+import Carros from './pages/Carros';
+import DetalhesCarro from './pages/DetalhesCarro';
+import MinhasReservas from './pages/MinhasReservas';
 
 const App = () => {
 
@@ -10,6 +14,13 @@ const App = () => {
   return (
     <div>
       {!isCaminhoDoDono && <Navbar setMostarLogin={setMostrarLogin}/>}
+
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/carro-detalhes/:id' element={<DetalhesCarro/>}/>
+        <Route path='/carros' element={<Carros/>}/>
+        <Route path='/minhas-reservas' element={<MinhasReservas/>}/>
+      </Routes>
     </div>
   );
 };
