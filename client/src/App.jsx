@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Carros from './pages/Carros';
 import DetalhesCarro from './pages/DetalhesCarro';
 import MinhasReservas from './pages/MinhasReservas';
+import RodapeSite from './components/rodape';
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
 
   return (
     <div>
+      
       {!isCaminhoDoDono && <Navbar setMostarLogin={setMostrarLogin}/>}
 
       <Routes>
@@ -21,6 +23,9 @@ const App = () => {
         <Route path='/carros' element={<Carros/>}/>
         <Route path='/minhas-reservas' element={<MinhasReservas/>}/>
       </Routes>
+
+      {!isCaminhoDoDono &&  <RodapeSite/>}
+  
     </div>
   );
 };

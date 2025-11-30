@@ -9,16 +9,16 @@ const Hero = () =>{
 
     return (
         <div className='flex flex-col
-        items-center justify-start gap-3 bg-light text-center h-screen'>
-        
-
-        <div className="flex max-lg:flex-col justify-center items-center gap-5 py-2">
-            <img src={assetsListados.CarroPagina} alt="carro" className=" lg:h-70 max-lg:h-55 max-md:h-40 border-4 border-black shadow-lg"/>
+        items-center justify-start gap-3 bg-light text-center '>  
+        <div className="flex max-lg:flex-col justify-center items-center gap-5 py-2 overflow-hidden">
+            <div className="overflow-hidden lg:h-70 max-lg:h-55 max-md:h-40">
+                <img src={assetsListados.CarroPagina} alt="carro" className="w-full h-full border-4 border-black shadow-lg object-cover transition-transform duration-500 hover:scale-105"/>
+            </div> 
             <div className="flex flex-col gap-3 xl:w-195 w-135 max-sm:w-80 h-60 ">
                 <div className="flex justify-center items-center gap-7 ">
                 <h1 className="text-2xl font-semibold">T-20 : Beleza e Velocidade</h1>
                 <button className="flex max-sm:hidden items-center justify-center gap-1 px-9 py-3 bg-[#262626] hover:bg-[#585858] text-white rounded-full cursor-pointer text-black">
-                    <img src={assetsListados.mais} alt="search" className="h-3" />
+                    <img src={assetsListados.maisBranco} alt="search" className="h-3" />
                     Sobre
                 </button>
                 </div>
@@ -49,7 +49,7 @@ const Hero = () =>{
                     <input type="date" id="dataRetorno" className="text-sm text-gray-500" required/>
                 </div>
             </div>
-            <button className="flex items-center justify-center gap-1 px-9 py-3 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full cursor-pointer">
+            <button className="flex items-center justify-center gap-1 px-9 py-3 max-md:mt-5 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full cursor-pointer">
                     <img src={assetsListados.pesquisaIcone} alt="search" className="brightness-300" />
                     Procurar
                 </button>

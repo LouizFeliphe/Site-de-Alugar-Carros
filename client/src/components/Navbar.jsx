@@ -14,7 +14,7 @@ const Navbar = ({setMostarLogin}) => {
     ]
 
     return (
-        <div className={`flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 text-gray-600 border-b border-borderColor relative transition-all
+        <div className={`flex items-center justify-between gap-4 px-6 md:px-16 lg:px-24 xl:px-32 py-4 text-gray-600 border-b border-borderColor relative transition-all
         ${localizacao.pathname === "/" && "bg-light"}`}>
 
             <Link to='/' className='flex flex-row items-center gap-2 text-2xl font-bold'>
