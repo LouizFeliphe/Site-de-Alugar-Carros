@@ -9,8 +9,10 @@ const SecaoMostrada = () => {
 
     return (
         <div className="flex flex-col items-center py-11 px-6 md:px-16 lg:px-24 xl:px-32">
-            <div>
+            <div className="flex jutify-center items-center gap-5 w-full">
+                <hr className="w-full"/>
                 <Titulo titulo="Veiculos Legais" subTitulo="Adoro beijo na boca, beijo na boca me dá tesão ! How have you forsaken me ? " alinhar="fer"/>
+                 <hr className="w-full"/>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-18">
