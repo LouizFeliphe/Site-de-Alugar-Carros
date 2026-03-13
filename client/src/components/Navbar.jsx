@@ -39,7 +39,7 @@ const Navbar = ({setMostarLogin}) => {
 
                 <div className='flex max-sm:flex-col items-start sm:items-center gap-6'>
                     <button onClick={()=>{
-                        navegar('/painel')
+                        navegar('/proprietario')
                     }}className='cursor-pointer'>Painel</button>
                     <button onClick={()=>{
                         setMostarLogin(true);

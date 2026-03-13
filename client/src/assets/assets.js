@@ -5,10 +5,10 @@ import PesquisaIcone from './search.svg';
 import CarroPagina from './carroGoogl.png';
 import setaBaixo from './setaBaixo.svg';
 import mais from './mais.svg';
-import carroIcone from './carroIcone.svg';
-import gasolinaIcone from './gasolinaIcone.svg';
+import carroIcone from './carroIcone2.svg';
+import gasolinaIcone from './gas.svg';
 import localIcone from './localIcone.svg';
-import usuario from './usuario.svg';
+import usuario from './pessoaCarro.svg';
 import carroGoogl from './carroGoogl.png';
 import maisBranco from './maisBranco.svg';
 import opala from './opala.png';
@@ -25,6 +25,36 @@ import OpaELamborghini from './HeroCars.png';
 import opala2 from './Opala2.jpg';
 import quadrado from './quadrado.svg';
 import filtro from './filtro.svg';
+import calendario from './calendario.svg';
+import tempoAzul from './tempoAzul.svg';
+import tempoLaranja from './tempoLaranja.svg';
+import localRemocao from './localRemocao.svg';
+import dashboard from './dashboard.svg'
+import dashboardColorido from './dashboardColorido.svg'
+import carPainel from './carPainel.svg'
+import carPainelColorido from './carPainelColorido.svg'
+import add from './add.svg'
+import addColorido from './addColorido.svg'
+import prancheta from './prancheta.svg'
+import pranchetaColorido from './pranchetaColorido.svg'
+
+
+export const dadosFalsosUsuario = {
+    "_id": "6878432984ceft9fjda4235",
+    "nome": "UrsoPolar",
+    "email": "luizfeliphe@gmail.com",
+    "papel": "proprietario",
+    "image": usuario,
+}
+
+export const dadosFalsosProprietarioLinks = [
+    {nome: "Dashboard", caminho:"/proprietario", icone: dashboard, iconeColorido: dashboardColorido},
+    {nome: "Adicionar Carro", caminho:"/proprietario/adicionar-carro", icone: add, iconeColorido: addColorido},
+    {nome: "Gerenciar Carros", caminho:"/proprietario/gerenciar-carros", icone: carPainel, iconeColorido: carPainelColorido},
+    {nome: "Gerenciar Reservas", caminho:"/proprietario/gerenciar-reservas", icone: prancheta, iconeColorido: pranchetaColorido},
+]
+
+
 
 export const dadosFalsosCarro = [
     {
@@ -137,6 +167,27 @@ export const dadosFalsosReservas = [
     }
 ]
 
+export const painelDados = {
+    totalCarros: 8,
+    totalReservas: 15,
+    pendingReservas: 5,
+    completoReservas: 10,
+    recenteReservas: [{
+      carro: {marca: "BMW", modelo: "T405" },
+      modelo: "405r8",
+      preco: "3452",
+      status: "Confirmado",
+      createdAt: "2025-06-10T12:57:48.244Z"
+    },{
+      carro:  {marca: "BMW", modelo: "T405R8" },
+      modelo: "405r8",
+      preco: "3452",
+      status: "Confirmado",
+      createdAt: "2025-06-10T12:57:48.244Z"
+    }],
+    mensalLucro: 4578,
+}
+
 export const listaDeCidades = [
     "São Paulo",
     "Rio de Janeiro",
@@ -170,4 +221,8 @@ export const assetsListados={
     quadrado: quadrado,
     filtro: filtro,
     opala2: opala2,
+    calendario: calendario,
+    tempoAzul: tempoAzul,
+    tempoLaranja: tempoLaranja,
+    localRemocao: localRemocao,
 }
